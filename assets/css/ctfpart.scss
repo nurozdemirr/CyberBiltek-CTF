@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: dimgray;
+    @media (max-height: 750px) {
+        height: 1080px;
+    }
+
+    & > img {
+        &.bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+         
+        }
+
+        &.bg-logo {
+            position: absolute;
+            height: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            @media(max-width: 770px){
+                height: 50%;
+            }
+            @media(max-width: 430px){
+                height: 40%;
+            }
+        }
+    }
+    .ctfallpart{
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+ 
+        @media (max-width:1200px) {
+            width: 800px;
+        }
+       
+        .ctftittle{
+            padding: 20px 0;
+            font-size: 3rem;
+            font-weight: bold;
+
+            @media (max-width:920px) {
+                font-size: 2rem;
+            }
+        }
+        .ctfcontainer{
+            display: flex;
+            justify-content: space-between;
+
+            .ctftext{
+                width: 50%;
+                font-size: 1.2rem;
+                align-items: center;
+                display: flex;
+                @media (max-width:920px) {
+                    font-size: 1rem;
+                }
+                @media (max-width:460px) {
+                    font-size: 0.9rem;
+                    
+                }
+                @media (max-width:415px) {
+                    font-size: 0.7rem;
+                    
+                }
+            }
+            .ctfnotice{
+                border-left: 4px solid white;
+                text-align: center;
+                height: 400px;
+
+                div{
+                    width: 100%;
+                    height: 25%;
+                    font-size: 1.8em;
+                    text-align:  start;
+                    font-weight: bold;
+ 
+                    
+                    p{
+                        margin-left: 50px;
+                        font-size: 1.2rem;
+                        font-weight: normal;
+
+                        
+                    }
+                    .ctfcircle{
+                    display:inline-block;
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: white;
+                    right: 27px;
+                    transform: translate(0,50%);
+                    }
+                }
+    
+            } 
+            
+
+        }
+        
+        
+    }
+
+
+}
