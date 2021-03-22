@@ -20,6 +20,19 @@ body .register-container {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 800px) {
+  body .register-container {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .register-container {
+    width: 50%;
+  }
+}
+
 body .register-container .register-form-title {
   text-align: center;
   color: white;
