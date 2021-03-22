@@ -9,6 +9,15 @@ body {
     height: 100vh;
 
     .register-container {
+        @media (max-width:800px) {
+            width: 80%;
+            font-size: 20px
+        }
+
+        @media(max-width:500px) {
+            width: 50%;
+        }
+
         width: 440px;
         height: auto;
         position: absolute;
@@ -39,7 +48,7 @@ body {
             }
 
             .register-buton {
-                cursor: pointer;              
+                cursor: pointer;
                 border: none;
                 margin: 10px 0;
             }
