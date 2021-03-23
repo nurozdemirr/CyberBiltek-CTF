@@ -84,6 +84,45 @@ body {
                     
                 }
             }
+
+            .ctfnotice{
+                position: relative;
+                width: 300px;
+
+                .vertical{
+                    position: absolute;
+                    width: 2px;
+                    height: 400px;
+                    background-color: white;
+                    left: 24px;
+                }
+                    .kare{
+                        align-items: center;
+                        display: flex;
+                        height: 100px;
+                        width: 300px;
+
+                        .ctfcircle{
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background-color: white;
+                        }
+
+                        .textarea{
+                            margin-left: 30px;
+
+                            p{
+                                margin: 0;
+                            }
+                        }
+
+                   } 
+
+                }
+        }
+            /*
             .ctfnotice{
                 border-left: 4px solid white;
                 text-align: center;
@@ -118,11 +157,10 @@ body {
     
             } 
             
-
+*/
         }
         
         
     }
 
 
-}

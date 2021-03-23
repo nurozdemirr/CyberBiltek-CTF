@@ -61,6 +61,42 @@ body .ctfallpart {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: aliceblue;
+  /*
+            .ctfnotice{
+                border-left: 4px solid white;
+                text-align: center;
+                height: 400px;
+
+                div{
+                    width: 100%;
+                    height: 25%;
+                    font-size: 1.8em;
+                    text-align:  start;
+                    font-weight: bold;
+ 
+                    
+                    p{
+                        margin-left: 50px;
+                        font-size: 1.2rem;
+                        font-weight: normal;
+
+                        
+                    }
+                    .ctfcircle{
+                    display:inline-block;
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: white;
+                    right: 27px;
+                    transform: translate(0,50%);
+                    }
+                }
+    
+            } 
+            
+*/
 }
 
 @media (max-width: 1200px) {
@@ -120,34 +156,42 @@ body .ctfallpart .ctfcontainer .ctftext {
 }
 
 body .ctfallpart .ctfcontainer .ctfnotice {
-  border-left: 4px solid white;
-  text-align: center;
+  position: relative;
+  width: 300px;
+}
+
+body .ctfallpart .ctfcontainer .ctfnotice .vertical {
+  position: absolute;
+  width: 2px;
   height: 400px;
+  background-color: white;
+  left: 24px;
 }
 
-body .ctfallpart .ctfcontainer .ctfnotice div {
-  width: 100%;
-  height: 25%;
-  font-size: 1.8em;
-  text-align: start;
-  font-weight: bold;
+body .ctfallpart .ctfcontainer .ctfnotice .kare {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 300px;
 }
 
-body .ctfallpart .ctfcontainer .ctfnotice div p {
-  margin-left: 50px;
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-body .ctfallpart .ctfcontainer .ctfnotice div .ctfcircle {
-  display: inline-block;
+body .ctfallpart .ctfcontainer .ctfnotice .kare .ctfcircle {
   position: relative;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: white;
-  right: 27px;
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
+}
+
+body .ctfallpart .ctfcontainer .ctfnotice .kare .textarea {
+  margin-left: 30px;
+}
+
+body .ctfallpart .ctfcontainer .ctfnotice .kare .textarea p {
+  margin: 0;
 }
 /*# sourceMappingURL=ctfpart.css.map */
